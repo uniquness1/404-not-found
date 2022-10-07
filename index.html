@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1,  maximum-scale=5" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="title" content="404 Page">
     <meta name="description" content="This challenge is suitable for you if you just started with coding. The challenge will test your basic CSS and HTML skills.">
     <!-- favicon -->
@@ -15,6 +15,8 @@
     
     <!-- css -->
     <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"> -->
 
     <title>Devchallenges</title>
   </head>
@@ -27,10 +29,12 @@
     <main>
       <section>
         <div class="container">
-          <div class="not-found-image">
+          <div class="not-found-image" data-aos="flip-left"
+          data-aos-easing="ease-out-cubic"
+          data-aos-duration="2000">
             <img src="images/Scarecrow.png" alt="">
           </div>
-          <div class="not-found-content">
+          <div class="not-found-content" data-aos="zoom-in-up" data-aos-duration="2000">
             <h1 class="not-found-heading">I have bad news for you</h1>
             <p class="not-found-description">The page you are looking <br> for might be removed or is <br> temporarily unavailable</p>
             <button class="cta">Back to homepage</button>
@@ -41,5 +45,11 @@
         </footer>
       </section>
     </main>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
